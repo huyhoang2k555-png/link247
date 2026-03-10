@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Mở bằng Chrome</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+margin-top:120px;
+}
+
+input{
+width:80%;
+padding:10px;
+}
+
+button{
+margin-top:10px;
+padding:10px 20px;
+background:#3b82f6;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+.red{
+color:red;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h3>Săn Clip Idol</h3>
+
+<p class="red">
+Vui lòng mở bằng Chrome hoặc Safari
+</p>
+
+<input id="link" value="https://yourlink.com">
+
+<br>
+
+<button onclick="copy()">Sao chép Link</button>
+
+<p>
+Nhấn dấu ... góc trên → Open in browser
+</p>
+
+<script>
+
+function copy(){
+
+var c = document.getElementById("link");
+
+c.select();
+
+document.execCommand("copy");
+
+alert("Đã copy link");
+
+}
+
+</script>
+
+</body>
+</html>
